@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Connexion</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensans.woff" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="title-key page-header__title">
+        Blog
+      </h1>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" aria-label="Menu">
+        </button>
+        <a class="main-nav__logo-link">
+          <img class="main-nav__logo-img" src="img/logo-desktop.svg" width="100" height="100" alt="Logo Connexion">
+          Connexion
+        </a>
+        <form class="search-form main-nav__search">
+          <a class="search-form__link" href="#">
+            <svg class="main-nav__icon-search" width="18" height="18" aria-hidden="true" role="presentation">
+              <use xlink:href="#s-icon-search"></use>
+            </svg>
+          </a>
+          <label class="search-form__label visually-hidden" for="search-menu">
+            Поиск по сайту
+          </label>
+          <input class="search-form__input-text" type="search" name="main-search" id="search-menu" placeholder="Enter your keyword">
+        </form>
+        <ul class="site-menu main-nav__site-menu">
+          <li>
+            <a class="site-menu__link" href="#">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="site-menu__link" href="#">
+              Blog
+            </a>
+          </li>
+          <li>
+            <a class="site-menu__link" href="about.html">
+              About
+            </a>
+          </li>
+          <li>
+            <a class="site-menu__link" href="#">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="posts">
+        <article class="item-post posts__item">
+          <h3 class="item-post__title">
+            Connexion — Example of Business Blog
+          </h3>
+          <time datetime="2018-10-08">
+            08.10.2018
+          </time>
+          <img class="item-post__img" src="img/" width="100" height="100" alt="">
+          <div class="author-wrapper">
+            <p>By</p>
+            <cite class="item-post__cite">
+              David Hyman
+            </cite>
+            <p>340</p>
+            <p>views</p>
+          </div>
+          <p class="item-post__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodem porincid dunt labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+          </p>
+        </article>
+        <section class="tags posts__tags">
+          <h2 class="visually-hidden">
+            Tags of post
+          </h2>
+          <ul class="tags__list-work">
+            <li>
+              <a href="#" class="tags__links">
+                Management
+              </a>
+            </li>
+            <li>
+              <a href="#" class="tags__links">
+                Copywritting
+              </a>
+            </li>
+          </ul>
+          <ul class="tags__list-study">
+            <li>
+              <a href="#" class="tags__links">
+                SMM
+              </a>
+            </li>
+            <li>
+              <a href="#" class="tags__links">
+                SEO
+              </a>
+            </li>
+            <li>
+              <a href="#" class="tags__links">
+                Advisory Board
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="author posts__author">
+          <h3 class="author__title">
+            David Hyman
+          </h3>
+          <img class="author__pic" src="img/" width="100" height="100" alt="author__pic">
+          <address class="author__contacts">
+            <a class="author__email" href="mailto:ahev@rr-group.ml">
+              ahev@rr-group.ml
+            </a>
+            <ul class="author__socials">
+              <li>
+                <a href="#"></a>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
+            </ul>
+          </address>
+          <p class="author__text">
+            Cumque accusamus urna irure, unde nullam dui facilis. Laboris! Ratione. Conditum vivamus dolores consequuntur, sagittis vestibulum, alias
+          </p>
+        </section>
+        <section class="related posts__related">
+          <h2 class="related__title">
+            Related Articles
+          </h2>
+          <ul class="related__nav">
+            <li>
+              <a href="#" class="related__nav-link">
+                Previous
+              </a>
+            </li>
+            <li>
+              <a href="#" class="related__nav-link">
+                Next
+              </a>
+            </li>
+          </ul>
+          <ul class="related__list">
+            <li>
+              <a href="#" class="related__link">
+                Connexion—Example of Business Blog
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="comments posts__comments">
+          <h2 class="comments__title">
+            <b>2</b>
+            Comments
+          </h2>
+          <ul class="comments__list">
+            <li class="comments__comment">
+              <b>
+                <a class="comments__author">
+                  David Hyman
+                </a>
+              </b>
+              <time datetime="2018-10-10">
+                10.10.2018
+              </time>
+              <p class="comments__text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Saccusantium
+              </p>
+              <a class="comments__link-reply">
+                Reply
+              </a>
+              <ul class="comments__list comments__list--reply">
+                <li class="comments__comment comments__comment--reply">
+                  <b>
+                  <a class="comments__author">
+                    David Hyman
+                  </a>
+                  </b>
+                  <time datetime="2018-10-10">
+                    10.10.2018
+                  </time>
+                  <p class="comments__text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Saccusantium
+                  </p>
+                  <a class="comments__link-reply">
+                    Reply
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="form-comment posts__form ">
+          <h2 class="form-comment__title">
+            Leave Your Comment
+          </h2>
+          <form action="post" class="form-comment__form" name="form-comment">
+            <ul class="form-comment__list">
+              <li class="form-comment__item">
+                <label class="form-comment__label" for="name-comment-author"></label>
+                <input class="form-comment__input" type="text" id="name-comment-author" placeholder="Name*" required>
+              </li>
+              <li class="form-comment__item">
+                <label class="form-comment__label" for="email-comment-author"></label>
+                <input class="form-comment__input" type="email" id="email-comment-author" placeholder="Email*" required>
+              </li>
+              <li class="form-comment__item">
+                <label class="form-comment__label" for="comment-text"></label>
+                <textarea class="form-comment__message" id="comment-text" placeholder="Type your comment here"></textarea>
+              </li>
+            </ul>
+            <input class="button form-comment__button" type="submit" value="Submit comment">
+          </form>
+        </section>
+        <ul class="posts__pagination">
+          <li>
+            <a href="#">
+              1
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              2
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              3
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="search">
+        <h2 class="search__title">
+          Search
+        </h2>
+        <form class="search__form page-search">
+          <a class="page-search__link" href="#">
+            <svg class="main-nav__icon-search" width="18" height="18" aria-hidden="true" role="presentation">
+              <use xlink:href="#s-icon-search"></use>
+            </svg>
+          </a>
+          <label class="page-search__label visually-hidden" for="page-search-menu">
+            Поиск по сайту
+          </label>
+          <input class="page-search__input-text" type="search" name="main-search" id="page-search-menu" placeholder="Enter your keyword">
+        </form>
+      </section>
+      <section class="tags">
+        <h2 class="tags__title">
+          Populars
+        </h2>
+        <ul class="tags__list">
+          <li>
+            <a href="#" class="tags__links">
+              Management
+            </a>
+          </li>
+          <li>
+            <a href="#" class="tags__links">
+              Advisory Board
+            </a>
+            </li>
+          <li>
+            <a href="#" class="tags__links">
+              Soft Skills
+            </a>
+          </li>
+          <li>
+            <a href="#" class="tags__links">
+              Blogging
+            </a>
+          </li>
+          <li>
+            <a href="#" class="tags__links">
+              SEO
+            </a>
+          </li>
+          <li>
+            <a href="#" class="tags__links">
+              Copywritting
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="recent">
+        <h2 class="recent__title">
+          Recent post
+        </h2>
+        <article class="recent__post post-preview">
+          <h3 class="post-preview__title">
+            Lorem Ipsum
+          </h3>
+          <p class="post-preview__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, soluta corporis, dolores quas neque expedita quia saepe impedit deleniti, similique quos. Blanditiis corporis, nam et temporibus. Minima voluptatum sint, aperiam.
+          </p>
+        </article>
+        <article class="recent__post post-preview">
+          <h3 class="post-preview__title">
+            Lorem Ipsum
+          </h3>
+          <p class="post-preview__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, voluptatem doloremque eaque ea nulla modi odit sit et provident est architecto libero voluptate nisi fuga ducimus error repellendus at dolore?
+          </p>
+        </article>
+        <article class="recent__post post-preview">
+          <h3 class="post-preview__title">
+            Lorem Ipsum
+          </h3>
+          <p class="post-preview__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit maxime quaerat sit ut, aut? Eveniet quidem nihil, asperiores officia sint ipsa dicta odio odit assumenda tempore laboriosam animi aliquid natus.
+          </p>
+        </article>
+        <article class="recent__post post-preview">
+          <h3 class="post-preview__title">
+            Lorem Ipsum
+          </h3>
+          <p class="post-preview__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, repellendus molestias qui excepturi voluptates! Provident magnam assumenda eius, nemo iste ipsa libero ab, modi iusto, suscipit nam porro error. Perspiciatis?
+          </p>
+        </article>
+        <article class="recent__post post-preview">
+          <h3 class="post-preview__title">
+            Lorem Ipsum
+          </h3>
+          <p class="post-preview__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint deserunt excepturi ipsum quam, fugit molestias ab eos recusandae suscipit, iusto illum, dignissimos adipisci enim nesciunt aliquam expedita magnam quos illo!
+          </p>
+        </article>
+      </section>
+      <section class="categories">
+        <h2 class="categories__title">
+          Categores
+        </h2>
+        <ul class="categories__main-list">
+          <li>
+            <a href="#">
+              The Lorem Ipsum
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              The Lorem Ipsum
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              The Lorem Ipsum
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              The Lorem Ipsum
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              The Lorem Ipsum
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="main-form">
+        <h2 class="visually-hidden">
+          Order form
+        </h2>
+        <p class="main-form__description">
+          Need help with your PR? We build brand reputation and offer real solutions to business challenges, and do whatever it takes to get the results you deserve. We’d love to hear from you.
+        </p>
+        <form class="form-order" action="get" name="form-get">
+          <ul class="form-order__list">
+            <li class="form-order__item">
+              <label class="form-order__label" for="name-client"></label>
+              <input class="form-order__input" type="text" id="name-client" placeholder="First Name*" required>
+            </li>
+            <li class="form-order__item">
+              <label class="form-order__label" for="surname-client"></label>
+              <input class="form-order__input" type="text" id="surname-client" placeholder="Last Name**" required>
+            </li>
+            <li class="form-order__item">
+              <label class="form-order__label" for="email-client"></label>
+              <input class="form-order__input" type="email" id="email-client" placeholder="Email*" required>
+            </li>
+            <li class="form-order__item">
+              <label class="form-order__label" for="tel-client"></label>
+              <input class="form-order__input" type="tel" id="tel-client" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Phone">
+            </li>
+            <li class="form-order__item">
+              <label class="form-order__label" for="message-client"></label>
+              <textarea class="form-order__message" id="message-client" placeholder="Type your message here"></textarea>
+            </li>
+          </ul>
+          <input class="button form-order__button" type="submit" value="Contact Us">
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <section class="page-footer__contacts contacts">
+        <h2 class="contacts__title">
+          Contact Us
+        </h2>
+        <p class="contacts__address">
+          4264 Stratford Court
+        </p>
+        <p class="contacts__phone">
+          919-916-0923
+        </p>
+        <p class="contacts__mail">
+          <a href="mailto:ahev@rr-group.ml" class="contacts__link">
+            ahev@rr-group.ml
+          </a>
+        </p>
+      </section>
+      <section class="page-footer__links links">
+        <h2 class="links__title">
+          Useful Links
+        </h2>
+        <ul class="links__list">
+          <li>
+            <a href="#" class="links__link">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#" class="links__link">
+              Blog
+            </a>
+          </li>
+          <li>
+            <a href="#" class="links__link">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#" class="links__link">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-footer__gallery gallery">
+        <h2 class="gallery__title">
+          Gallery
+        </h2>
+        <ul class="gallery__list">
+          <li>
+            <a href="#" class="gallery__link">
+              <img src="img/" alt="This_is_picture" class="gallery__pic" width="100" height="100">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="gallery__link">
+              <img src="img/" alt="This_is_picture" class="gallery__pic" width="100" height="100">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="gallery__link">
+              <img src="img/" alt="This_is_picture" class="gallery__pic" width="100" height="100">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="gallery__link">
+              <img src="img/" alt="This_is_picture" class="gallery__pic" width="100" height="100">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="gallery__link">
+              <img src="img/" alt="This_is_picture" class="gallery__pic" width="100" height="100">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="gallery__link">
+              <img src="img/" alt="This_is_picture" class="gallery__pic" width="100" height="100">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <p class="page-footer__copyright">
+        All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>
