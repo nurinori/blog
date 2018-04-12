@@ -9,6 +9,4 @@ build/
 node_modules/
 npm-debug.*
 source/css/*.css
-source/img/svg/
-source/img/svg-post
 Thumbs.db
