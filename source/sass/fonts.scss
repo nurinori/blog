@@ -1,0 +1,60 @@
+
+@font-face {
+  font-weight: 400;
+  font-family: "MerriweatherSans";
+  font-style: normal;
+  font-display: swap;
+
+  src:
+    local("MerriweatherSans-Regular"),
+    url("../fonts/merriweathersans-regular.woff2") format("woff2"),
+    url("../fonts/merriweathersans-regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "MerriweatherSans";
+  font-style: normal;
+  font-display: swap;
+
+  src:
+    local("MerriweatherSans-Bold"),
+    url("../fonts/merriweathersans-bold.woff2") format("woff2"),
+    url("../fonts/merriweathersans-bold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 800;
+  font-family: "MerriweatherSans";
+  font-style: normal;
+  font-display: swap;
+
+  src:
+    local("MerriweatherSans-ExtraBold"),
+    url("../fonts/merriweathersans-extrabold.woff2") format("woff2"),
+    url("../fonts/merriweathersans-extrabold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "MerriweatherSans";
+  font-style: italic;
+  font-display: swap;
+
+  src:
+    local("MerriweatherSans-Italic"),
+    url("../fonts/merriweathersans-italic.woff2") format("woff2"),
+    url("../fonts/merriweathersans-italic.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 800;
+  font-family: "OpenSans";
+  font-style: normal;
+  font-display: swap;
+
+  src:
+    local("OpenSans-Bold"),
+    url("../fonts/opensans-bold.woff2") format("woff2"),
+    url("../fonts/opensans-bold.woff") format("woff");
+}

@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Connexion</title>
-    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
-    <link rel="preload" href="fonts/opensansbold.woff" as="font">
-    <link rel="preload" href="fonts/merriweathersans-bold.woff2" as="font">
-    <link rel="preload" href="fonts/merriweathersans-bold.woff" as="font">
-    <link rel="preload" href="fonts/merriweathersans-extrabold.woff2" as="font">
-    <link rel="preload" href="fonts/merriweathersans-extrabold.woff" as="font">
-    <link rel="preload" href="fonts/merriweathersans-italic.woff2" as="font">
-    <link rel="preload" href="fonts/merriweathersans-italic.woff" as="font">
-    <link rel="preload" href="fonts/merriweathersans-regular.woff2" as="font">
-    <link rel="preload" href="fonts/merriweathersans-regular.woff" as="font">
+    <link rel="preload" href="/fonts/opensans-bold.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="/fonts/opensans-bold.woff" as="font" type="font/woff">
+    <link rel="preload" href="/fonts/merriweathersans-bold.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="/fonts/merriweathersans-bold.woff" as="font" type="font/woff">
+    <link rel="preload" href="/fonts/merriweathersans-extrabold.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="/fonts/merriweathersans-extrabold.woff" as="font" type="font/woff">
+    <link rel="preload" href="/fonts/merriweathersans-italic.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="/fonts/merriweathersans-italic.woff" as="font" type="font/woff">
+    <link rel="preload" href="/fonts/merriweathersans-regular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="/fonts/merriweathersans-regular.woff" as="font" type="font/woff">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -21,11 +21,11 @@
       <h1 class="title-key page-header__title">
         Blog
       </h1>
-      <nav class="main-nav">
+      <nav class="page-header__nav main-nav">
         <button class="main-nav__toggle" type="button" aria-label="Menu">
         </button>
         <a class="main-nav__logo-link">
-          <img class="main-nav__logo-img" src="img/logo-desktop.svg" width="100" height="100" alt="Logo Connexion">
+          <img class="main-nav__logo-img" src="img/logo.svg" width="100" height="100" alt="Logo Connexion">
           Connexion
         </a>
         <form class="search-form main-nav__search">
@@ -64,44 +64,61 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="posts">
-        <h2 class="visually-hidden">
+      <section class="page-main__posts posts">
+        <h2 class="posts__title visually-hidden">
           Last posts
         </h2>
         <article class="posts__item item-post">
           <h3 class="item-post__title">
-            Connexion — Example of Business Blog
+            <a href="#" class="item-post__link">
+              Connexion—Example of Business Blog
+            </a>
           </h3>
-          <time datetime="2018-10-08">
+          <time datetime="2018-10-08" class="item-post__time">
             08.10.2018
           </time>
           <img class="item-post__img" src="img/convers-320.jpg" width="300" height="200" alt="Convers">
-          <div class="author-wrapper">
-            <p>By</p>
-            <cite class="item-post__cite">
-              David Hyman
-            </cite>
-            <p>340</p>
-            <p>views</p>
+          <div class="item-post__author-wrapper">
+            <p class="item-post__author">
+              By
+              <a class="item-post__author-link" href="#">
+                David Hyman
+              </a>
+            </p>
+            <p class="item-post__count-views">
+              <b class="item-post__js-views">
+                340
+              </b>
+              views
+            </p>
           </div>
-          <p class="item-post__text">
+          <p class="item-post__text item-post__text--preview">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodem porincid dunt labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
           </p>
         </article>
         <article class="posts__item item-post">
           <h3 class="item-post__title">
-            Connexion — Example of Business Blog
+            <a href="#" class="item-post__link">
+              Connexion — Example of Business Blog
+            </a>
           </h3>
-          <time datetime="2018-10-08">
+          <time datetime="2018-10-08" class="item-post__time">
             08.10.2018
           </time>
           <img class="item-post__img" src="img/music-320.jpg" width="300" height="200" alt="Music">
-          <div class="author-wrapper">
-            <p>By</p>
-            <cite class="item-post__cite">
-              David Hyman
-            </cite>
-            <p>340</p><p>views</p>
+          <div class="item-post__author-wrapper">
+            <p class="item-post__author">
+              By
+              <a class="item-post__author-link" href="#">
+                David Hyman
+              </a>
+            </p>
+            <p class="item-post__count-views">
+              <b class="item-post__js-views">
+                340
+              </b>
+              views
+            </p>
           </div>
           <p class="item-post__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodem porincid dunt labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
@@ -109,19 +126,27 @@
         </article>
         <article class="posts__item item-post">
           <h3 class="item-post__title">
-            Connexion — Example of Business Blog
+            <a href="#" class="item-post__link">
+              Connexion — Example of Business Blog
+            </a>
           </h3>
-          <time datetime="2018-10-08">
+          <time datetime="2018-10-08" class="item-post__time">
             08.10.2018
           </time>
-          <img class="item-post__img" src="img/clock-320.jpg" width="300" height="300" alt="Clock">
-          <div class="author-wrapper">
-            <p>By</p>
-            <cite class="item-post__cite">
-              David Hyman
-            </cite>
-            <p>340</p>
-            <p>views</p>
+          <img class="item-post__img" src="img/clock-320.jpg" width="300" height="200" alt="Clock">
+          <div class="item-post__author-wrapper">
+            <p class="item-post__author">
+              By
+              <a class="item-post__author-link" href="#">
+                David Hyman
+              </a>
+            </p>
+            <p class="item-post__count-views">
+              <b class="item-post__js-views">
+                340
+              </b>
+              views
+            </p>
           </div>
           <p class="item-post__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodem porincid dunt labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
@@ -129,19 +154,27 @@
         </article>
         <article class="posts__item item-post">
           <h3 class="item-post__title">
-            Connexion — Example of Business Blog
+            <a href="#" class="item-post__link">
+              Connexion — Example of Business Blog
+            </a>
           </h3>
-          <time datetime="2018-10-08">
+          <time datetime="2018-10-08" class="item-post__time">
             08.10.2018
           </time>
           <img class="item-post__img" src="img/flower-320.jpg" width="300" height="200" alt="flower">
-          <div class="author-wrapper">
-            <p>By</p>
-            <cite class="item-post__cite">
-              David Hyman
-            </cite>
-            <p>340</p>
-            <p>views</p>
+          <div class="item-post__author-wrapper">
+            <p class="item-post__author">
+              By
+              <a class="item-post__author-link" href="#">
+                David Hyman
+              </a>
+            </p>
+            <p class="item-post__count-views">
+              <b class="item-post__js-views">
+                340
+              </b>
+              views
+            </p>
           </div>
           <p class="item-post__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodem porincid dunt labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
@@ -149,19 +182,92 @@
         </article>
         <article class="posts__item item-post">
           <h3 class="item-post__title">
-            Connexion — Example of Business Blog
+            <a href="#" class="item-post__link">
+              Connexion — Example of Business Blog
+            </a>
           </h3>
-          <time datetime="2018-10-08">
+          <time datetime="2018-10-08" class="item-post__time">
             08.10.2018
           </time>
           <img class="item-post__img" src="img/coffee-320.jpg" width="300" height="200" alt="Coffee">
-          <div class="author-wrapper">
-            <p>By</p>
-            <cite class="item-post__cite">
-              David Hyman
+          <div class="item-post__author-wrapper">
+            <p class="item-post__author">
+              By
+              <a class="item-post__author-link" href="#">
+                David Hyman
+              </a>
+            </p>
+            <p class="item-post__count-views">
+              <b class="item-post__js-views">
+                340
+              </b>
+              views
+            </p>
+          </div>
+          <p class="item-post__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodem porincid dunt labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+          </p>
+        </article>
+        <article class="posts__item item-post item-post--quote">
+          <h3 class="item-post__title">
+            <a href="#" class="item-post__link">
+              Connexion — Example of Business Blog
+            </a>
+          </h3>
+          <time datetime="2018-10-08" class="item-post__time">
+            08.10.2018
+          </time>
+          <div class="item-post__blockquote">
+            <p class="item-post__blockquote-text">
+              “Great things in business are never done by one person. They're done by a team of people”.
+            </p>
+            <cite class="item-post__blockquote-author">
+              Steve Jobs
             </cite>
-            <p>340</p>
-            <p>views</p>
+          </div>
+          <div class="item-post__author-wrapper">
+            <p class="item-post__author">
+              By
+              <a class="item-post__author-link" href="#">
+                David Hyman
+              </a>
+            </p>
+            <p class="item-post__count-views">
+              <b class="item-post__js-views">
+                340
+              </b>
+              views
+            </p>
+          </div>
+          <p class="item-post__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodem porincid dunt labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+          </p>
+        </article>
+        <article class="posts__item item-post item-post--big-link">
+          <h3 class="item-post__title">
+            <a href="#" class="item-post__link">
+              Connexion — Example of Business Blog
+            </a>
+          </h3>
+          <time datetime="2018-10-08" class="item-post__time">
+            08.10.2018
+          </time>
+          <a class="item-post__big-link">
+            http://pp.connex.co/bussiness
+          </a>
+          <div class="item-post__author-wrapper">
+            <p class="item-post__author">
+              By
+              <a class="item-post__author-link" href="#">
+                David Hyman
+              </a>
+            </p>
+            <p class="item-post__count-views">
+              <b class="item-post__js-views">
+                340
+              </b>
+              views
+            </p>
           </div>
           <p class="item-post__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodem porincid dunt labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
@@ -169,59 +275,26 @@
         </article>
         <article class="posts__item item-post">
           <h3 class="item-post__title">
-            Connexion — Example of Business Blog
+            <a href="#" class="item-post__link">
+              Connexion — Example of Business Blog
+            </a>
           </h3>
-          <time datetime="2018-10-08">
+          <time datetime="2018-10-08" class="item-post__time">
             08.10.2018
           </time>
-          <img class="item-post__img" src="img/" width="100" height="100" alt="">
-          <div class="author-wrapper">
-            <p>By</p>
-            <cite class="item-post__cite">
-              David Hyman
-            </cite>
-            <p>340</p>
-            <p>views</p>
-          </div>
-          <p class="item-post__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodem porincid dunt labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
-          </p>
-        </article>
-        <article class="posts__item item-post">
-          <h3 class="item-post__title">
-            Connexion — Example of Business Blog
-          </h3>
-          <time datetime="2018-10-08">
-            08.10.2018
-          </time>
-          <img class="item-post__img" src="img/" width="100" height="100" alt="">
-          <div class="author-wrapper">
-            <p>By</p>
-            <cite class="item-post__cite">
-              David Hyman
-            </cite>
-            <p>340</p>
-            <p>views</p>
-          </div>
-          <p class="item-post__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodem porincid dunt labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
-          </p>
-        </article>
-        <article class="posts__item item-post">
-          <h3 class="item-post__title">
-            Connexion — Example of Business Blog
-          </h3>
-          <time datetime="2018-10-08">
-            08.10.2018
-          </time>
-          <img class="item-post__img" src="img/" width="100" height="100" alt="">
-          <div class="author-wrapper">
-            <p>By</p>
-            <cite class="item-post__cite">
-              David Hyman
-            </cite>
-            <p>340</p>
-            <p>views</p>
+          <div class="item-post__author-wrapper">
+            <p class="item-post__author">
+              By
+              <a class="item-post__author-link" href="#">
+                David Hyman
+              </a>
+            </p>
+            <p class="item-post__count-views">
+              <b class="item-post__js-views">
+                340
+              </b>
+              views
+            </p>
           </div>
           <p class="item-post__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodem porincid dunt labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
@@ -245,13 +318,13 @@
           </li>
         </ul>
       </section>
-      <section class="search">
+      <section class="page-main__search search">
         <h2 class="search__title">
           Search
         </h2>
         <form class="search__form page-search">
           <a class="page-search__link" href="#">
-            <svg class="main-nav__icon-search" width="18" height="18" aria-hidden="true" role="presentation">
+            <svg class="" width="18" height="18" aria-hidden="true" role="presentation">
               <use xlink:href="#s-icon-search"></use>
             </svg>
           </a>
@@ -261,7 +334,7 @@
           <input class="page-search__input-text" type="search" name="main-search" id="page-search-menu" placeholder="Enter your keyword">
         </form>
       </section>
-      <section class="tags">
+      <section class="page-main__tags tags">
         <h2 class="tags__title">
           Popular
         </h2>
@@ -298,7 +371,7 @@
           </li>
         </ul>
       </section>
-      <section class="recent">
+      <section class="page-main__recent recent">
         <h2 class="recent__title">
           Recent post
         </h2>
@@ -315,7 +388,7 @@
           <h3 class="post-preview__title">
             Lorem Ipsum
           </h3>
-          <img  class="post-preview__pic" src="img/preview-flower.jpg.jpg"width="80" height="80" alt="Flower">
+          <img  class="post-preview__pic" src="img/preview-flower.jpg"width="80" height="80" alt="Flower">
           <p class="post-preview__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, voluptatem doloremque eaque ea nulla modi odit sit et provident est architecto libero voluptate nisi fuga ducimus error repellendus at dolore?
           </p>
@@ -324,7 +397,7 @@
           <h3 class="post-preview__title">
             Lorem Ipsum
           </h3>
-          <img  class="post-preview__pic" src="img/preview-convers.jpg.jpg"width="80" height="80" alt="Convers">
+          <img  class="post-preview__pic" src="img/preview-convers.jpg"width="80" height="80" alt="Convers">
           <p class="post-preview__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit maxime quaerat sit ut, aut? Eveniet quidem nihil, asperiores officia sint ipsa dicta odio odit assumenda tempore laboriosam animi aliquid natus.
           </p>
@@ -333,7 +406,7 @@
           <h3 class="post-preview__title">
             Lorem Ipsum
           </h3>
-          <img  class="post-preview__pic" src="img/preview-coffee.jpg.jpg"width="80" height="80" alt="Coffee">
+          <img  class="post-preview__pic" src="img/preview-coffee.jpg"width="80" height="80" alt="Coffee">
           <p class="post-preview__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, repellendus molestias qui excepturi voluptates! Provident magnam assumenda eius, nemo iste ipsa libero ab, modi iusto, suscipit nam porro error. Perspiciatis?
           </p>
@@ -342,13 +415,13 @@
           <h3 class="post-preview__title">
             Lorem Ipsum
           </h3>
-          <img  class="post-preview__pic" src="img/preview-clock.jpg.jpg"width="80" height="80" alt="Clock">
+          <img  class="post-preview__pic" src="img/preview-clock.jpg"width="80" height="80" alt="Clock">
           <p class="post-preview__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint deserunt excepturi ipsum quam, fugit molestias ab eos recusandae suscipit, iusto illum, dignissimos adipisci enim nesciunt aliquam expedita magnam quos illo!
           </p>
         </article>
       </section>
-      <section class="categories">
+      <section class="page-main__categories categories">
         <h2 class="categories__title">
           Categores
         </h2>
@@ -380,7 +453,7 @@
           </li>
         </ul>
       </section>
-      <section class="main-form">
+      <section class="page-main__main-form main-form">
         <h2 class="visually-hidden">
           Order form
         </h2>

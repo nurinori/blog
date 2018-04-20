@@ -1,0 +1,29 @@
+@mixin font-reg {
+  font-weight: 400;
+  font-family: "MerriweatherSans", "Arial", sans-serif;
+  font-style: normal;
+}
+
+@mixin font-bold {
+  font-weight: 700;
+  font-family: "MerriweatherSans", "Arial", sans-serif;
+  font-style: normal;
+}
+
+@mixin font-extrabold {
+  font-weight: 800;
+  font-family: "MerriweatherSans", "Arial", sans-serif;
+  font-style: normal;
+}
+
+@mixin font-italic {
+  font-weight: 400;
+  font-family: "MerriweatherSans", "Arial", sans-serif;
+  font-style: italic;
+}
+
+@mixin font-opensans {
+  font-weight: 800;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-style: normal;
+}
