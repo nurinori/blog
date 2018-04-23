@@ -1,0 +1,22 @@
+.post-preview {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-preview__title {
+  padding: 0;
+
+  font-size: 20px;
+  line-height: 20px;
+  width: 100%;
+
+  @include font-bold;
+}
+
+.post-preview__text {
+  max-height: 75px;
+  overflow: hidden;
+
+  text-overflow: clip;
+  margin:  -80px  0 0 100px;
+}

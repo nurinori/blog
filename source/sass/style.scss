@@ -1,6 +1,16 @@
 @import "normalize";
+@import "visually-hidden";
 @import "fonts";
 @import "variables";
 @import "mixins";
 @import "global";
 @import "blocks/item-post";
+@import "blocks/posts";
+@import "blocks/pagination";
+@import "blocks/search";
+@import "blocks/aside-wrapper";
+@import "blocks/main-wrapper";
+@import "blocks/page-search";
+@import "blocks/tags";
+@import "blocks/recent";
+@import "blocks/post-preview";

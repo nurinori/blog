@@ -1,0 +1,33 @@
+
+.tags__title {
+  margin: 50px 0 57px 0;
+  padding: 0;
+
+  font-size: 20px;
+  line-height: 20px;
+
+  @include font-bold;
+}
+
+.tags__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+.tags__links {
+  display: block;
+  padding: 15px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: $main;
+  text-decoration: none;
+
+  background-color: $grey;
+  margin: 0 20px 20px 0;
+}

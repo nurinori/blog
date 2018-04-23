@@ -1,0 +1,29 @@
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 750px;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @media (min-width: 1200px) {
+    width: 750px;
+  }
+}
+
+.posts__item {
+  margin-bottom: 60px;
+
+  &--quote {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 90px;
+  }
+}
+
+.posts__pagination {
+  margin: 0 auto;
+}
+

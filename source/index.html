@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg">"<include>
+    </div>
     <header class="page-header">
       <h1 class="title-key page-header__title">
         Blog
@@ -64,7 +67,8 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="page-main__posts posts">
+      <div class="main-wrapper">
+        <section class="page-main__posts posts">
         <h2 class="posts__title visually-hidden">
           Last posts
         </h2>
@@ -74,10 +78,12 @@
               Connexion—Example of Business Blog
             </a>
           </h3>
-          <time datetime="2018-10-08" class="item-post__time">
-            08.10.2018
-          </time>
-          <img class="item-post__img" src="img/convers-320.jpg" width="300" height="200" alt="Convers">
+          <time datetime="2018-10-08" class="item-post__time">08.10.2018</time>
+          <picture class="item-post__img">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/convers.webp">
+            <source type="image/webp" srcset="img/convers-320.webp">
+            <img src="img/convers-320.jpg" alt="Convers">
+          </picture>
           <div class="item-post__author-wrapper">
             <p class="item-post__author">
               By
@@ -92,20 +98,22 @@
               views
             </p>
           </div>
-          <p class="item-post__text item-post__text--preview">
+          <p class="item-post__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodem porincid dunt labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
           </p>
         </article>
-        <article class="posts__item item-post">
+        <article class="posts__item item-post item-post--video">
           <h3 class="item-post__title">
             <a href="#" class="item-post__link">
-              Connexion — Example of Business Blog
+              Connexion—Example of Business Blog
             </a>
           </h3>
-          <time datetime="2018-10-08" class="item-post__time">
-            08.10.2018
-          </time>
-          <img class="item-post__img" src="img/music-320.jpg" width="300" height="200" alt="Music">
+          <time datetime="2018-10-08" class="item-post__time">08.10.2018</time>
+          <picture class="item-post__img">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/music.webp">
+            <source type="image/webp" srcset="img/music-320.webp">
+            <img src="img/music-320.jpg" alt="Music">
+          </picture>
           <div class="item-post__author-wrapper">
             <p class="item-post__author">
               By
@@ -127,13 +135,15 @@
         <article class="posts__item item-post">
           <h3 class="item-post__title">
             <a href="#" class="item-post__link">
-              Connexion — Example of Business Blog
+              Connexion—Example of Business Blog
             </a>
           </h3>
-          <time datetime="2018-10-08" class="item-post__time">
-            08.10.2018
-          </time>
-          <img class="item-post__img" src="img/clock-320.jpg" width="300" height="200" alt="Clock">
+          <time datetime="2018-10-08" class="item-post__time">08.10.2018</time>
+          <picture class="item-post__img item-post__img--pin">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/clock.webp">
+            <source type="image/webp" srcset="img/clock-320.webp">
+            <img src="img/clock-320.jpg" alt="Clock">
+          </picture>
           <div class="item-post__author-wrapper">
             <p class="item-post__author">
               By
@@ -155,13 +165,15 @@
         <article class="posts__item item-post">
           <h3 class="item-post__title">
             <a href="#" class="item-post__link">
-              Connexion — Example of Business Blog
+              Connexion—Example of Business Blog
             </a>
           </h3>
-          <time datetime="2018-10-08" class="item-post__time">
-            08.10.2018
-          </time>
-          <img class="item-post__img" src="img/flower-320.jpg" width="300" height="200" alt="flower">
+          <time datetime="2018-10-08" class="item-post__time">08.10.2018</time>
+          <picture class="item-post__img">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/flower.webp">
+            <source type="image/webp" srcset="img/flower-320.webp">
+            <img src="img/flower-320.jpg" alt="flower">
+          </picture>
           <div class="item-post__author-wrapper">
             <p class="item-post__author">
               By
@@ -183,13 +195,15 @@
         <article class="posts__item item-post">
           <h3 class="item-post__title">
             <a href="#" class="item-post__link">
-              Connexion — Example of Business Blog
+              Connexion—Example of Business Blog
             </a>
           </h3>
-          <time datetime="2018-10-08" class="item-post__time">
-            08.10.2018
-          </time>
-          <img class="item-post__img" src="img/coffee-320.jpg" width="300" height="200" alt="Coffee">
+          <time datetime="2018-10-08" class="item-post__time">08.10.2018</time>
+          <picture class="item-post__img">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/coffee.webp">
+            <source type="image/webp" srcset="img/coffee-320.webp">
+            <img src="img/coffee-320.jpg" alt="Coffee">
+          </picture>
           <div class="item-post__author-wrapper">
             <p class="item-post__author">
               By
@@ -208,18 +222,16 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodem porincid dunt labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
           </p>
         </article>
-        <article class="posts__item item-post item-post--quote">
+        <article class="posts__item posts__item--quote item-post item-post--quote">
           <h3 class="item-post__title">
             <a href="#" class="item-post__link">
-              Connexion — Example of Business Blog
+              Connexion—Example of Business Blog
             </a>
           </h3>
-          <time datetime="2018-10-08" class="item-post__time">
-            08.10.2018
-          </time>
+          <time datetime="2018-10-08" class="item-post__time">08.10.2018</time>
           <div class="item-post__blockquote">
             <p class="item-post__blockquote-text">
-              “Great things in business are never done by one person. They're done by a team of people”.
+              “Great things in business are never done by one person. They're done by a team of people.”
             </p>
             <cite class="item-post__blockquote-author">
               Steve Jobs
@@ -243,18 +255,18 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodem porincid dunt labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
           </p>
         </article>
-        <article class="posts__item item-post item-post--big-link">
+        <article class="posts__item item-post posts__item--big-link">
           <h3 class="item-post__title">
             <a href="#" class="item-post__link">
-              Connexion — Example of Business Blog
+              Connexion—Example of Business Blog
             </a>
           </h3>
-          <time datetime="2018-10-08" class="item-post__time">
-            08.10.2018
-          </time>
-          <a class="item-post__big-link">
+          <time datetime="2018-10-08" class="item-post__time">08.10.2018</time>
+          <div class="item-post__wrapper-big-link">
+            <a class="item-post__big-link" href="#">
             http://pp.connex.co/bussiness
           </a>
+          </div>
           <div class="item-post__author-wrapper">
             <p class="item-post__author">
               By
@@ -276,12 +288,10 @@
         <article class="posts__item item-post">
           <h3 class="item-post__title">
             <a href="#" class="item-post__link">
-              Connexion — Example of Business Blog
+              Connexion—Example of Business Blog
             </a>
           </h3>
-          <time datetime="2018-10-08" class="item-post__time">
-            08.10.2018
-          </time>
+          <time datetime="2018-10-08" class="item-post__time">08.10.2018</time>
           <div class="item-post__author-wrapper">
             <p class="item-post__author">
               By
@@ -300,99 +310,97 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodem porincid dunt labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
           </p>
         </article>
-        <ul class="posts__pagination">
+        <ul class="posts__pagination pagination">
           <li>
-            <a href="#">
+            <a class="pagination__link pagination__link--current">
               1
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="pagination__link" href="#">
               2
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="pagination__link" href="#">
               3
             </a>
           </li>
         </ul>
-      </section>
-      <section class="page-main__search search">
-        <h2 class="search__title">
-          Search
-        </h2>
-        <form class="search__form page-search">
-          <a class="page-search__link" href="#">
-            <svg class="" width="18" height="18" aria-hidden="true" role="presentation">
-              <use xlink:href="#s-icon-search"></use>
-            </svg>
-          </a>
-          <label class="page-search__label visually-hidden" for="page-search-menu">
-            Поиск по сайту
-          </label>
-          <input class="page-search__input-text" type="search" name="main-search" id="page-search-menu" placeholder="Enter your keyword">
-        </form>
-      </section>
-      <section class="page-main__tags tags">
-        <h2 class="tags__title">
-          Popular
-        </h2>
-        <ul class="tags__list">
-          <li>
-            <a href="#" class="tags__links">
-              Management
-            </a>
-          </li>
-          <li>
-            <a href="#" class="tags__links">
-              Advisory Board
-            </a>
-          </li>
-          <li>
-            <a href="#" class="tags__links">
-              Soft Skills
-            </a>
-          </li>
-          <li>
-            <a href="#" class="tags__links">
-              Blogging
-            </a>
-          </li>
-          <li>
-            <a href="#" class="tags__links">
-              SEO
-            </a>
-          </li>
-          <li>
-            <a href="#" class="tags__links">
-              Copywritting
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="page-main__recent recent">
-        <h2 class="recent__title">
-          Recent post
-        </h2>
-        <article class="recent__post post-preview">
-          <h3 class="post-preview__title">
-            Lorem Ipsum
-          </h3>
-          <img  class="post-preview__pic" src="img/preview-music.jpg"width="80" height="80" alt="Music">
-          <p class="post-preview__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, soluta corporis, dolores quas neque expedita quia saepe impedit deleniti, similique quos. Blanditiis corporis, nam et temporibus. Minima voluptatum sint, aperiam.
-          </p>
-        </article>
-        <article class="recent__post post-preview">
-          <h3 class="post-preview__title">
-            Lorem Ipsum
-          </h3>
-          <img  class="post-preview__pic" src="img/preview-flower.jpg"width="80" height="80" alt="Flower">
-          <p class="post-preview__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, voluptatem doloremque eaque ea nulla modi odit sit et provident est architecto libero voluptate nisi fuga ducimus error repellendus at dolore?
-          </p>
-        </article>
+        </section>
+        <div class="aside-wrapper">
+          <section class="page-main__search search">
+            <h2 class="search__title">
+              Search
+            </h2>
+            <form class="search__form page-search">
+              <label class="page-search__label" for="page-search-menu">
+                <svg width="25" height="25" aria-hidden="true" role="presentation">
+                  <use xlink:href="#s-icon-search"></use>
+                </svg>
+              </label>
+              <input class="page-search__input-text" type="search" name="main-search" id="page-search-menu" placeholder="Enter your keyword">
+            </form>
+          </section>
+          <section class="page-main__tags tags">
+            <h2 class="tags__title">
+              Populars
+            </h2>
+            <ul class="tags__list">
+              <li>
+                <a href="#" class="tags__links">
+                  Management
+                </a>
+              </li>
+              <li>
+                <a href="#" class="tags__links">
+                  Advisory Board
+                </a>
+              </li>
+              <li>
+                <a href="#" class="tags__links">
+                  Soft Skills
+                </a>
+              </li>
+              <li>
+                <a href="#" class="tags__links">
+                  Blogging
+                </a>
+              </li>
+              <li>
+                <a href="#" class="tags__links">
+                  SEO
+                </a>
+              </li>
+              <li>
+                <a href="#" class="tags__links">
+                  Copywritting
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="page-main__recent recent">
+            <h2 class="recent__title">
+              Recent post
+            </h2>
+            <article class="recent__post post-preview">
+              <h3 class="post-preview__title">
+                Lorem Ipsum
+              </h3>
+              <img  class="post-preview__pic" src="img/preview-music.jpg"width="80" height="80" alt="Music">
+              <p class="post-preview__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, soluta corporis, dolores quas neque expedita quia saepe impedit deleniti, similique quos. Blanditiis corporis, nam et temporibus. Minima voluptatum sint, aperiam.
+              </p>
+            </article>
+            <article class="recent__post post-preview">
+              <h3 class="post-preview__title">
+                Lorem Ipsum
+              </h3>
+              <img  class="post-preview__pic" src="img/preview-flower.jpg"width="80" height="80" alt="Flower">
+              <p class="post-preview__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, voluptatem doloremque eaque ea nulla modi odit sit et provident est architecto libero voluptate nisi fuga ducimus error repellendus at dolore?
+              </p>
+            </article>
         <article class="recent__post post-preview">
           <h3 class="post-preview__title">
             Lorem Ipsum
@@ -420,8 +428,8 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint deserunt excepturi ipsum quam, fugit molestias ab eos recusandae suscipit, iusto illum, dignissimos adipisci enim nesciunt aliquam expedita magnam quos illo!
           </p>
         </article>
-      </section>
-      <section class="page-main__categories categories">
+        </section>
+        <section class="page-main__categories categories">
         <h2 class="categories__title">
           Categores
         </h2>
@@ -452,7 +460,9 @@
             </a>
           </li>
         </ul>
-      </section>
+        </section>
+        </div>
+      </div>
       <section class="page-main__main-form main-form">
         <h2 class="visually-hidden">
           Order form
