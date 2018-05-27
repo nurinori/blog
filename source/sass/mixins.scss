@@ -1,31 +1,25 @@
 @mixin font-reg {
   font-weight: 400;
-  font-family: "MerriweatherSans-Regular", "Arial", sans-serif;
+  font-family: "OpenSans-Regular", "Arial", sans-serif;
   font-style: normal;
 }
 
 @mixin font-bold {
   font-weight: 700;
-  font-family: "MerriweatherSans-Bold", "Arial", sans-serif;
+  font-family: "OpenSans-Bold", "Arial", sans-serif;
   font-style: normal;
 }
 
 @mixin font-extrabold {
   font-weight: 800;
-  font-family: "MerriweatherSans-ExtraBold", "Arial", sans-serif;
+  font-family: "OpenSans-ExtraBold", "Arial", sans-serif;
   font-style: normal;
 }
 
 @mixin font-italic {
   font-weight: 400;
-  font-family: "MerriweatherSans-Italic", "Arial", sans-serif;
+  font-family: "OpenSans-Italic", "Arial", sans-serif;
   font-style: italic;
-}
-
-@mixin font-opensans {
-  font-weight: 800;
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-style: normal;
 }
 
 @mixin hover-active {

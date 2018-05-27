@@ -1,20 +1,36 @@
 .pagination {
   display: flex;
+  align-items: center;
+  padding: 0 35px 0 35px;
 
   list-style: none;
   text-decoration: none;
 }
 
+.pagination__item {
+  margin: 0 10px 0 0;
+
+  &--button {
+    margin: 0;
+  }
+}
+
 .pagination__link {
   display: block;
+  width: 44px;
+  box-sizing: border-box;
+  padding: 13px 13px 13px 13px;
+  text-align: center;
+  @include font-bold;
 
   line-height: 22px;
   color: $main;
   text-decoration: none;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-
-  @include font-opensans;
-
+  &:hover,
+  &:focus {
+    background-color: $grey;
+    color: $blue;
+    box-shadow: 5px 5px 5px 0 rgba(0, 47, 167, 0.2);
+    transition: all 0.4s;
+  }
 }

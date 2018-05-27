@@ -1,55 +1,30 @@
-
 @font-face {
   font-weight: 400;
-  font-family: "MerriweatherSans-Regular";
+  font-family: "OpenSans-Regular";
   font-style: normal;
   font-display: swap;
 
   src:
-    local("MerriweatherSans-Regular"),
-    url("../fonts/merriweathersans-regular.woff2") format("woff2"),
-    url("../fonts/merriweathersans-regular.woff") format("woff");
-}
-
-@font-face {
-  font-weight: 700;
-  font-family: "MerriweatherSans-Bold";
-  font-style: normal;
-  font-display: swap;
-
-  src:
-    local("MerriweatherSans-Bold"),
-    url("../fonts/merriweathersans-bold.woff2") format("woff2"),
-    url("../fonts/merriweathersans-bold.woff") format("woff");
-}
-
-@font-face {
-  font-weight: 800;
-  font-family: "MerriweatherSans-ExtraBold";
-  font-style: normal;
-  font-display: swap;
-
-  src:
-    local("MerriweatherSans-ExtraBold"),
-    url("../fonts/merriweathersans-extrabold.woff2") format("woff2"),
-    url("../fonts/merriweathersans-extrabold.woff") format("woff");
+    local("OpenSans-Regular"),
+    url("../fonts/opensans-regular.woff2") format("woff2"),
+    url("../fonts/opensans-regular.woff") format("woff");
 }
 
 @font-face {
   font-weight: 400;
-  font-family: "MerriweatherSans-Italic";
+  font-family: "OpenSans-Italic";
   font-style: italic;
   font-display: swap;
 
   src:
-    local("MerriweatherSans-Italic"),
-    url("../fonts/merriweathersans-italic.woff2") format("woff2"),
-    url("../fonts/merriweathersans-italic.woff") format("woff");
+    local("OpenSans-Italic"),
+    url("../fonts/opensans-italic.woff2") format("woff2"),
+    url("../fonts/opensans-italic.woff") format("woff");
 }
 
 @font-face {
-  font-weight: 800;
-  font-family: "OpenSans";
+  font-weight: 700;
+  font-family: "OpenSans-Bold";
   font-style: normal;
   font-display: swap;
 
@@ -58,3 +33,18 @@
     url("../fonts/opensans-bold.woff2") format("woff2"),
     url("../fonts/opensans-bold.woff") format("woff");
 }
+
+@font-face {
+  font-weight: 800;
+  font-family: "OpenSans-ExtraBold";
+  font-style: normal;
+  font-display: swap;
+
+  src:
+    local("OpenSans-ExtraBold"),
+    url("../fonts/opensans-extrabold.woff2") format("woff2"),
+    url("../fonts/opensans-extrabold.woff") format("woff");
+}
+
+
+

@@ -1,5 +1,6 @@
-
 .tags__title {
+  position: relative;
+
   margin: 50px 0 57px 0;
   padding: 0;
 
@@ -7,6 +8,26 @@
   line-height: 20px;
 
   @include font-bold;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 175px;
+
+    width: 125px;
+    height: 2px;
+
+    background-color: $blue;
+  }
+
+  @media (min-width: 768px) {
+    margin: 0 0 57px 0;
+
+    &:before {
+      right: 250px;
+    }
+  }
 }
 
 .tags__list {
@@ -18,16 +39,22 @@
   list-style: none;
 }
 
-
 .tags__links {
   display: block;
-  padding: 15px;
+  margin: 0 17px 20px 0;
+  padding: 12px 15px 12px 14px;
 
   font-size: 14px;
   line-height: 20px;
   color: $main;
   text-decoration: none;
+  letter-spacing: 0.3px;
 
   background-color: $grey;
-  margin: 0 20px 20px 0;
+  &:hover,
+  &:active {
+    color: #ffffff;
+
+    background-color: $blue;
+  }
 }
