@@ -1,3 +1,4 @@
+// Общее для всех статей
 .item-post {
   display: flex;
   flex-direction: column;
@@ -8,10 +9,10 @@
   @media (min-width: 768px) {
     width: 100%;
     max-width: 750px;
-    // padding: 0 64px 0 64px;
   }
 
   @media (min-width: 1200px) {
+    width: 750px;
     padding: 0;
   }
 }
@@ -20,8 +21,6 @@
   order: -2;
   margin: 23px 0 0 0;
   padding: 0;
-  font-size: 24px;
-  cursor: pointer;
 
   @media (min-width: 1200px) {
     margin: 30px 0 2px 0;
@@ -37,14 +36,14 @@
   color: $main;
   text-decoration: none;
   letter-spacing: 0.8px;
+
   cursor: pointer;
 
   @include font-extrabold;
   @include hover-active;
 
   @media (min-width: 768px) {
-  line-height: 20px;
-
+    line-height: 20px;
   }
 }
 
@@ -56,7 +55,44 @@
   font-size: 18px;
   line-height: 20px;
   color: $blue;
+
   @include font-bold;
+}
+
+.item-post__img {
+  position: relative;
+
+  order: -3;
+  margin: 5px 0 0 0;
+
+  transition: all 0.4s linear;
+
+  &--pin:after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 1px;
+    z-index: 1;
+
+    width: 32px;
+    height: 32px;
+
+    background-image: url("../img/icon-paperclip.svg");
+  }
+
+  @media (min-width: 1200px) {
+    margin: 7px 0 0 0;
+  }
+}
+
+.item-post__author-wrapper {
+  display: flex;
+  order: -1;
+  margin: 0 0 15px 0;
+
+  @media (min-width: 1200px) {
+    margin: 0 0 20px 0;
+  }
 }
 
 .item-post__author {
@@ -81,16 +117,6 @@
   @include hover-active;
 }
 
-.item-post__author-wrapper {
-  display: flex;
-  order: -1;
-  margin: 0 0 15px 0;
-
-  @media (min-width: 1200px) {
-    margin: 0 0 20px 0;
-  }
-}
-
 .item-post__count-views {
   margin: 0;
   padding: 0;
@@ -110,6 +136,34 @@
   text-transform: uppercase;
 }
 
+.item-post__lead{
+  width: 290px;
+  max-height: 156px;
+  margin: 0;
+  padding: 0;
+
+  text-align: justify;
+
+
+  @media (min-width: 768px) {
+    width: 100%;
+    max-width: 750px;
+    max-height: 52px;
+  }
+}
+
+ // слайдер
+.item-post__slider {
+  order: -3;
+  max-width: 750px;
+  margin: 5px 0 0 0;
+
+  @media (min-width: 1200px) {
+    margin: 7px 0 0 0;
+  }
+}
+
+// статья с цитатой вместо картинки
 .item-post__blockquote {
   position: relative;
 
@@ -118,7 +172,7 @@
 
   background-color: $blue;
 
-  &::after {
+  &:after {
     content: "";
     position: absolute;
     top: 45px;
@@ -164,6 +218,7 @@
   @include font-reg;
 }
 
+// статья со ссылкой вместо картинки
 .item-post__wrapper-big-link {
   position: relative;
 
@@ -173,7 +228,7 @@
 
   background-color: $blue;
 
-  &::after {
+  &:after {
     content: "";
     position: absolute;
     top: 7px;
@@ -213,41 +268,4 @@
   }
 }
 
-.item-post__img {
-  position: relative;
 
-  order: -3;
-  margin: 5px 0 0 0;
-
-  &--pin::after {
-    content: "";
-    position: absolute;
-    top: 9px;
-    right: 1px;
-    z-index: 1;
-
-    width: 32px;
-    height: 32px;
-
-    background-image: url("../img/icon-paperclip.svg");
-  }
-
-  @media (min-width: 1200px) {
-    margin: 7px 0 0 0;
-  }
-}
-
-.item-post__text {
-  width: 290px;
-  max-height: 156px;
-  margin: 0;
-  padding: 0;
-  text-align: justify;
-
-
-  @media (min-width: 768px) {
-    width: 100%;
-    max-width: 750px;
-    max-height: 52px;
-  }
-}

@@ -8,24 +8,10 @@
   line-height: 20px;
 
   @include font-bold;
+  @include blue-line;
 
-  &:before {
-    content: "";
-    position: absolute;
-    top: 36px;
-    right: 175px;
-
-    width: 125px;
-    height: 2px;
-
-    background-color: $blue;
-  }
   @media (min-width: 768px) {
     margin: 20px 0 57px 0;
-
-    &:before {
-      right: 250px;
-    }
   }
 }
 

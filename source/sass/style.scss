@@ -8,8 +8,6 @@
 @import "blocks/posts";
 @import "blocks/pagination";
 @import "blocks/search";
-@import "blocks/aside-wrapper";
-@import "blocks/main-wrapper";
 @import "blocks/page-search";
 @import "blocks/tags";
 @import "blocks/recent";
@@ -26,3 +24,9 @@
 @import "blocks/main-nav";
 @import "blocks/page-header";
 @import "blocks/title-key";
+@import "blocks/author";
+@import "blocks/related";
+@import "blocks/slider-nav";
+@import "blocks/comments";
+@import "blocks/form-comment";
+@import "libs";

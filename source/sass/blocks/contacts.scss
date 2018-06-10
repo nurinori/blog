@@ -1,9 +1,5 @@
-.contacts {
-  padding: 0 10px 0 10px;
-}
-
 .contacts__title {
-  margin: 0 0 37px 0;
+  margin: 0 0 35px 0;
   padding: 0;
 
   font-size: 18px;
@@ -21,30 +17,43 @@
   list-style: none;
 }
 
-.contacts__item {
-  display: flex;
-  padding: 0 0 16px 0;
+.contacts__link {
+  position: relative;
+
+  display: block;
+  padding: 0 0 16px 30px;
 
   font-size: 16px;
   line-height: 20px;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
 
   @include font-bold;
-}
-
-.contacts__item svg{
-  padding: 0 17px 0 0;
-  cursor: pointer;
-}
-
-.contacts__link {
-  display: block;
-  color: rgba(255, 255, 255, 0.9);
-  text-decoration: none;
 
   &--mail {
     font-size: 18px;
   }
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    svg {
+      fill: #ffffff;
+    }
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.5);
+    svg {
+      fill: rgba(255, 255, 255, 0.5);
+    }
+  }
 }
 
+.contacts__link svg {
+  position: absolute;
+  top: 2px;
+  left: 0;
 
+  fill: rgba(255, 255, 255, 0.8);
+}

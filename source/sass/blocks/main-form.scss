@@ -5,8 +5,14 @@
 .main-form__wrapper {
   box-sizing: border-box;
   max-width: 766px;
-  padding: 94px 3% 100px 3%;
   margin: 0 auto;
+  padding: 94px 3% 100px 3%;
+
+  @media (min-width: 1200px) {
+    box-sizing: content-box;
+    max-width: 950px;
+    padding: 79px 30px 100px 30px;
+  }
 }
 
 .main-form__description {

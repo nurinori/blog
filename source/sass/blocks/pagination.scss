@@ -1,14 +1,14 @@
 .pagination {
   display: flex;
   align-items: center;
-  padding: 0 35px 0 35px;
+  padding: 0;
 
   list-style: none;
   text-decoration: none;
 }
 
 .pagination__item {
-  margin: 0 10px 0 0;
+  margin: 0 5px 0 5px;
 
   &--button {
     margin: 0;
@@ -17,20 +17,65 @@
 
 .pagination__link {
   display: block;
-  width: 44px;
-  box-sizing: border-box;
-  padding: 13px 13px 13px 13px;
-  text-align: center;
-  @include font-bold;
+  padding: 11px 17px 11px 17px;
 
   line-height: 22px;
+  text-align: center;
   color: $main;
   text-decoration: none;
-  &:hover,
-  &:focus {
-    background-color: $grey;
-    color: $blue;
-    box-shadow: 5px 5px 5px 0 rgba(0, 47, 167, 0.2);
-    transition: all 0.4s;
+
+  @include font-bold;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: #ffffff;
+
+    background-color: $blue;
+    box-shadow: 5px 5px 5px 0 $blue-active;
+  }
+
+  &[href]:active {
+    background-color: $blue-active;
+  }
+
+  &--previous {
+    padding: 11px 0 10px 17px;
+
+    &[href]:hover,
+    &[href]:focus {
+      background-color: transparent;
+      box-shadow: none;
+
+      svg {
+        fill: $blue;
+      }
+    }
+
+    &[href]:active {
+      svg {
+        fill: $blue-active;
+      }
+    }
+  }
+
+  &--next {
+    padding: 11px 17px 10px 0;
+
+    &[href]:hover,
+    &[href]:focus {
+      background-color: transparent;
+      box-shadow: none;
+
+      svg {
+        fill: $blue;
+      }
+    }
+
+    &[href]:active {
+
+      svg {
+        fill: $blue-active;
+      }
+    }
   }
 }

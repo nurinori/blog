@@ -12,33 +12,26 @@
   width: 100%;
   min-height: 400px;
 
-  background-image: url(../img/bg.jpg);
-}
-
-.page-header__nav {
-  width: 320px;
-  margin: 0 auto;
-
-  @media (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  @media (min-width: 1200px) {
-    justify-content: flex-end;
-    width: 1200px;
-  }
+  background-image: url(../img/bg-1800.jpg);
+  background-position: 38% 92%;
+  background-repeat: no-repeat;
 }
 
 .page-header__title {
-  width: 320px;
+  width: 310px;
   margin: 0 auto;
+
   @media (min-width: 768px) {
     width: 758px;
   }
+
   @media (min-width: 1200px) {
     width: 1140px;
   }
 }
+
+.page-header__nav {
+  margin: 0 auto;
+}
+
+
