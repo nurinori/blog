@@ -4,9 +4,10 @@
   "description": "Адаптивный проект блога",
   "main": "index.js",
   "scripts": {
-    "test": "npm run editorconfig && npm run stylelint",
+    "test": "npm run scss-lint",
     "build": "gulp build",
-    "start": "npm run build && gulp serve"
+    "start": "npm run build && gulp serve",
+    "scss-lint": "gulp scss-lint"
   },
   "repository": {
     "type": "git",
@@ -34,9 +35,14 @@
     "gulp-svgstore": "^6.1.1",
     "gulp-uglifyjs": "^0.6.2",
     "gulp-webp": "^3.0.0",
+    "imagemin-jpeg-recompress": "^5.1.0",
     "jquery": "^3.3.1",
+    "postcss-reporter": "^5.0.0",
+    "postcss-scss": "^1.0.5",
     "posthtml-include": "^1.1.0",
     "run-sequence": "^2.2.1",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "stylelint": "^9.2.1",
+    "stylelint-config-htmlacademy": "^0.1.1"
   }
 }

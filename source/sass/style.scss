@@ -1,9 +1,8 @@
-@import "normalize";
-@import "visually-hidden";
-@import "fonts";
-@import "variables";
-@import "mixins";
-@import "global";
+@import "utility/normalize";
+@import "utility/fonts";
+@import "utility/variables";
+@import "utility/mixins";
+@import "utility/global";
 @import "blocks/item-post";
 @import "blocks/posts";
 @import "blocks/pagination";
@@ -29,4 +28,4 @@
 @import "blocks/slider-nav";
 @import "blocks/comments";
 @import "blocks/form-comment";
-@import "libs";
+@import "utility/slick";

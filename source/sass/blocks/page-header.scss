@@ -12,9 +12,9 @@
   width: 100%;
   min-height: 400px;
 
-  background-image: url(../img/bg-1800.jpg);
-  background-position: 38% 92%;
+  background-image: url("../img/bg-1800.jpg");
   background-repeat: no-repeat;
+  background-position: 38% 92%;
 }
 
 .page-header__title {
@@ -33,5 +33,3 @@
 .page-header__nav {
   margin: 0 auto;
 }
-
-

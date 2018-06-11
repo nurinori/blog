@@ -1,5 +1,6 @@
 .comments {
   width: 300px;
+
   @media (min-width: 768px) {
     width: 750px;
   }
@@ -66,6 +67,7 @@
   color: $main;
 
   @include font-bold;
+
   @media (min-width: 768px) {
     align-self: flex-end;
     margin: -20px 0 0 0;
@@ -99,7 +101,7 @@
   @include font-bold;
   @include hover-active;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     top: 30px;

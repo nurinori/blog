@@ -67,7 +67,7 @@
 
   transition: all 0.4s linear;
 
-  &--pin:after {
+  &--pin::after {
     content: "";
     position: absolute;
     top: 9px;
@@ -136,14 +136,14 @@
   text-transform: uppercase;
 }
 
-.item-post__lead{
+.item-post__lead {
   width: 290px;
   max-height: 156px;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 
   text-align: justify;
-
 
   @media (min-width: 768px) {
     width: 100%;
@@ -152,7 +152,7 @@
   }
 }
 
- // слайдер
+// слайдер
 .item-post__slider {
   order: -3;
   max-width: 750px;
@@ -172,7 +172,7 @@
 
   background-color: $blue;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     top: 45px;
@@ -228,7 +228,7 @@
 
   background-color: $blue;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     top: 7px;
@@ -267,5 +267,3 @@
     letter-spacing: 0.4px;
   }
 }
-
-

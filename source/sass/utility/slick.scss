@@ -14,7 +14,7 @@
   @include font-reg;
   @include hover-active;
 
-  &:before {
+  &::before {
     display: none;
   }
 }
@@ -35,7 +35,7 @@
   @include font-reg;
   @include hover-active;
 
-  &:before {
+  &::before {
     display: none;
   }
 }

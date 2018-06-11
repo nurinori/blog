@@ -8,6 +8,7 @@ var gulp = require("gulp"),
     minify = require("gulp-csso"),
     rename = require("gulp-rename"),
     imagemin = require("gulp-imagemin"),
+    imageminJpegRecompress = require('imagemin-jpeg-recompress'),
     webp = require("gulp-webp"),
     svgstore = require("gulp-svgstore"),
     posthtml = require("gulp-posthtml"),
@@ -17,7 +18,10 @@ var gulp = require("gulp"),
     run = require("run-sequence"),
     svgmin = require("gulp-svgmin"),
     concat = require('gulp-concat'),
-    uglify = require('gulp-uglifyjs');
+    uglify = require('gulp-uglifyjs'),
+    reporter = require('postcss-reporter'),
+    syntax_scss = require('postcss-scss'),
+    stylelint = require('stylelint');
 
 // Чистка свг, в сборку включать не надо
 gulp.task("svgmin", function () {
@@ -25,6 +29,22 @@ gulp.task("svgmin", function () {
     .pipe(svgmin())
     .pipe(gulp.dest("source/img/svg-post"));
 });
+
+gulp.task("scss-lint", function() {
+  var stylelintConfig = {
+    "extends": "stylelint-config-htmlacademy",
+  }
+  var processors = [
+    stylelint(stylelintConfig),
+    reporter({
+     })
+  ];
+
+  return gulp.src(
+      ["source/sass/**/*.scss"]
+    )
+    .pipe(postcss(processors, {syntax: syntax_scss}));
+  });
 
 gulp.task("style", function() {
   gulp.src([
@@ -43,19 +63,27 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-gulp.task("images", function () {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
-    .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
-      imagemin.jpegtran({progressive: true}),
-      imagemin.svgo()
-    ]))
-    .pipe(gulp.dest("build/img"));
-});
-
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("build/img"));
+});
+
+gulp.task("images", function () {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe((imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.jpegtran({progressive: true}),
+      imageminJpegRecompress({
+      loops: 4,
+      min: 65,
+      max: 85,
+      quality:'high'
+      }),
+      imagemin.svgo()
+      ], {
+      verbose: true
+      })))
     .pipe(gulp.dest("build/img"));
 });
 
@@ -102,7 +130,7 @@ gulp.task("serve", function() {
 });
 
 gulp.task("build", function (done) {
-  run("clean", "copy", "style", "images", "webp", "sprite", "scripts", "html", done);
+  run("clean", "copy", "style", "webp", "images", "sprite", "scripts", "html", done);
 });
 
 gulp.task("copy", function () {

@@ -12,6 +12,10 @@
   }
 }
 
+.posts__hiden-title {
+  @include visually-hidden;
+}
+
 .posts__item {
   margin: 0 auto 60px auto;
 
@@ -26,7 +30,6 @@
       margin: 0 auto 20px auto;
     }
   }
-
 }
 
 .posts__pagination {
@@ -53,6 +56,7 @@
 
 .posts__comments {
   margin: 0 auto 80px auto;
+
   @media (min-width: 768px) {
     margin: 0 0 65px 0;
   }
