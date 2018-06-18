@@ -9,6 +9,7 @@
   letter-spacing: 0.4px;
 
   @include blue-line;
+  @include font-bold;
 
   @media (min-width: 768px) {
     margin: 0 0 57px 0;

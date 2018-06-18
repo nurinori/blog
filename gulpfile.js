@@ -100,7 +100,7 @@ gulp.task("scripts", function() {
   return gulp.src([
     "node_modules/jquery/dist/jquery.min.js",
     "node_modules/slick-carousel/slick/slick.min.js",
-    "node_modules/jquery/dist/picturefill.min.js",
+    "node_modules/picturefill//dist/picturefill.min.js",
     "source/js/*.js"
     ])
     .pipe(concat("build.js"))

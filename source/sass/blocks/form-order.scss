@@ -59,9 +59,9 @@
 
 .form-order__input[placeholder],
 .form-order__message[placeholder] {
-  padding: 4px 0 0 14px;
+  padding: 13px 0 13px 14px;
+  line-height: normal;
 
-  line-height: 40px;
   letter-spacing: 0.4px;
 
   @include font-reg;
